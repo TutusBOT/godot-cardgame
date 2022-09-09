@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/Card/Cards/Heal.gd" type="Script" id=1]
+[ext_resource path="res://src/Card/Card.tscn" type="PackedScene" id=2]
+
+[node name="Heal" instance=ExtResource( 2 )]
+script = ExtResource( 1 )

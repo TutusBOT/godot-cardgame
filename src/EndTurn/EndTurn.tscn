@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/EndTurn/EndTurn.gd" type="Script" id=1]
+
+[node name="EndTurn" type="Button"]
+margin_right = 12.0
+margin_bottom = 20.0
+text = "End turn"
+script = ExtResource( 1 )
+
+[connection signal="pressed" from="." to="." method="_on_EndTurn_pressed"]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/Map/Rooms/Room.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/Default (64px)/dice_sword.png" type="Texture" id=2]
+[ext_resource path="res://src/Map/Rooms/EnemyRoom/EnemyRoom.gd" type="Script" id=3]
+
+[node name="EnemyRoom" instance=ExtResource( 1 )]
+texture_normal = ExtResource( 2 )
+script = ExtResource( 3 )

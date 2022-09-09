@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/Memento/Memento.gd" type="Script" id=1]
+[ext_resource path="res://src/UI/Tooltip/Tooltip.tscn" type="PackedScene" id=2]
+
+[node name="Memento" type="TextureButton"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+
+[node name="Tooltip" parent="." instance=ExtResource( 2 )]
+
+[connection signal="mouse_entered" from="." to="." method="_on_Memento_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_Memento_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_Memento_pressed" flags=6]

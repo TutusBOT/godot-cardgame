@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/UI/Tooltip/TooltipContent.gd" type="Script" id=2]
+
+[node name="TooltipContent" type="VBoxContainer"]
+margin_right = 320.0
+margin_bottom = 113.0
+mouse_filter = 2
+script = ExtResource( 2 )
+
+[node name="Header" type="HBoxContainer" parent="."]
+margin_right = 320.0
+margin_bottom = 21.0
+mouse_filter = 2
+
+[node name="Icon" type="TextureRect" parent="Header"]
+margin_bottom = 21.0
+mouse_filter = 2
+
+[node name="Title" type="Label" parent="Header"]
+margin_left = 4.0
+margin_right = 4.0
+margin_bottom = 21.0
+
+[node name="Description" type="Label" parent="."]
+margin_top = 25.0
+margin_right = 320.0
+margin_bottom = 46.0
+autowrap = true

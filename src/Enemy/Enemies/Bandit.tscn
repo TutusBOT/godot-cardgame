@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://src/Enemy/Enemy.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/Enemy/Enemies/Bandit.gd" type="Script" id=2]
+[ext_resource path="res://assets/bandit.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 128, 156 )
+
+[node name="Bandit" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Sprite" parent="." index="0"]
+position = Vector2( 2.6226e-06, -28 )
+scale = Vector2( 0.452297, 0.569343 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
+position = Vector2( 0, -28 )
+shape = SubResource( 1 )
+
+[node name="SanityBar" parent="." index="7"]
+margin_top = -208.0
+margin_bottom = -194.0
